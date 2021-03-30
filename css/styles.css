@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  //padding: 0;
   padding: 10px 30px 40px 30px;
   font-family: 'Poppins', sans-serif;
   color: hsl(234, 12%, 34%);
@@ -48,12 +47,13 @@ img {
     "three"
     "four";
   row-gap: 1.6rem;
-  padding: 50px 25px 75px 25px;
+  padding: 50px 25px 50px 25px;
+  justify-items: center;
+  align-items: center;
 }
 
 .header {
   text-align: center;
-  margin: 50px auto 50px auto;
 }
 
 .card {
@@ -61,6 +61,8 @@ img {
   border-radius: 0.4375rem;
   box-shadow: 0 0.938rem 1.875rem 0 rgba(0,81,171,0.15);
   padding: 10px 30px;
+  max-width: 300px;
+  min-height: 175px;
 }
 
 .one {
@@ -82,7 +84,6 @@ img {
   grid-area: four;
   border-top: solid 0.25rem hsl(212, 86%, 64%);
 }
-
 
 @media screen and (min-width: 800px) {
   body {
@@ -108,7 +109,6 @@ img {
     grid-column-start: 1;
     grid-column-end: 4;
     width: 40%;
-    margin-bottom: 30px;
   }
 
   .card {
@@ -125,6 +125,10 @@ img {
 
   .two, .three {
     justify-self: center;
+  }
+
+  .four {
+    justify-self: start;
   }
 
 }
